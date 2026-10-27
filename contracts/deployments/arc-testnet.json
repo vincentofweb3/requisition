@@ -1,0 +1,14 @@
+{
+  "network": "arc-testnet",
+  "chainId": 5042002,
+  "status": "deployed",
+  "contract": "0x578d3006f5a5c34149d5206caac008f544510cbd",
+  "deployTx": "0xff9d5fce44fa0c1925c9282b7e909e2972f3e6ea74dc537181db7a31a1ba389f",
+  "deployBlock": 69402196,
+  "usdc": "0x3600000000000000000000000000000000000000",
+  "constructorArgs": ["0x3600000000000000000000000000000000000000"],
+  "studioProject": "https://studio.arc.io/app/d3a230c9-d4b1-4c08-8cf4-6b018d2e83c0",
+  "studioPreview": "https://ir1cfm2pu2r187whim18o.preview.studio.arc.io",
+  "tests": "75 passed, 0 failed, 0 skipped",
+  "notes": "Studio testnet origin. Supporting evidence only; not a mainnet deployment."
+}

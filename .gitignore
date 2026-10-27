@@ -1,0 +1,15 @@
+.env
+.env.*
+!.env.example
+*.keystore
+broadcast/
+cache/
+out/
+node_modules/
+dist/
+.vercel/
+.DS_Store
+*.log
+coverage/
+playwright-report/
+test-results/

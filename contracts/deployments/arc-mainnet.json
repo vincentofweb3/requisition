@@ -1,0 +1,12 @@
+{
+  "network": "arc-mainnet",
+  "chainId": 5042,
+  "status": "pending",
+  "contract": null,
+  "deployTx": null,
+  "deployBlock": null,
+  "usdc": "0x3600000000000000000000000000000000000000",
+  "constructorArgs": ["0x3600000000000000000000000000000000000000"],
+  "exampleBatchTx": null,
+  "notes": "Not deployed. Requires human funding and explicit deployment approval."
+}
