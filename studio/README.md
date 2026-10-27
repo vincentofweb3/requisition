@@ -17,3 +17,5 @@ This directory preserves the Arc Studio run and the pulled artifacts. It is supp
 `STUDIO_PROMPT.md`, `run.json`, and `attach.json` record the prompt and detached run. `pulled/` contains the artifacts returned by `arc-studio pull`; its build caches are ignored. The canonical source and tests used for the public app live in `../contracts/`.
 
 Arc Studio deploys testnet only. Mainnet is a separate, human-approved Arc Foundry deployment; do not present the testnet preview as mainnet evidence.
+
+Raw Studio output in `attach.json` and `pulled/` contains model-generated claims, including an internal “security audit complete” status. Treat that as Studio-generated text, not an independent audit. The project is unaudited.
