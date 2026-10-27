@@ -2,6 +2,10 @@
 
 Status as of 2026-10-28. This file distinguishes testnet supporting evidence from the required mainnet evidence.
 
+## Public source
+
+Public repo: https://github.com/vincentofweb3/requisition. A clean clone with `--recurse-submodules` passed all 75 Foundry tests on 2026-10-28.
+
 ## Arc Studio testnet
 
 | Check | Value |
@@ -41,7 +45,8 @@ The Studio deployment was created through the platform deployer. The deployer ha
 
 Required before submission:
 
-- [ ] Human approves public repository and mainnet deployment.
+- [x] Human approves public repository.
+- [ ] Human approves mainnet deployment.
 - [ ] Human-controlled keystore funded with a small amount of Arc mainnet USDC.
 - [ ] `RequisitionBook` deployed to chain `5042` with USDC `0x3600000000000000000000000000000000000000`.
 - [ ] Contract code read back from mainnet.

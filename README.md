@@ -10,6 +10,7 @@ Built with **Arc Studio** on Arc Testnet. The mainnet deployment is a deliberate
 
 | Item | Value |
 | --- | --- |
+| Public repo | [github.com/vincentofweb3/requisition](https://github.com/vincentofweb3/requisition) |
 | Arc Studio project | [studio.arc.io/app/d3a230c9-d4b1-4c08-8cf4-6b018d2e83c0](https://studio.arc.io/app/d3a230c9-d4b1-4c08-8cf4-6b018d2e83c0) (Circle login may be required) |
 | Studio testnet preview | [ir1cfm2pu2r187whim18o.preview.studio.arc.io](https://ir1cfm2pu2r187whim18o.preview.studio.arc.io) |
 | Testnet contract | [`0x578d3006f5a5c34149d5206caac008f544510cbd`](https://explorer.testnet.arc.io/address/0x578d3006f5a5c34149d5206caac008f544510cbd) |
