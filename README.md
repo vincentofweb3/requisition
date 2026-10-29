@@ -17,7 +17,8 @@ Built with **Arc Studio** on Arc Testnet. The mainnet deployment is a deliberate
 | Testnet deployment tx | [`0xff9d5fce44fa0c1925c9282b7e909e2972f3e6ea74dc537181db7a31a1ba389f`](https://explorer.testnet.arc.io/tx/0xff9d5fce44fa0c1925c9282b7e909e2972f3e6ea74dc537181db7a31a1ba389f) |
 | Testnet block | `69402196` |
 | Contract tests | `75 passed, 0 failed, 0 skipped` |
-| Public app | Pending Vercel deployment |
+| Public testnet preview | [requisition-arc.vercel.app](https://requisition-arc.vercel.app) |
+| Public app (mainnet) | Pending mainnet contract and redeploy |
 | Mainnet contract / tx | **Pending funding and explicit deployment approval** |
 
 The testnet deployment is supporting evidence only. A real mainnet contract and a real mainnet USDC transaction are required for submission. This README does not claim either yet. See [docs/VERIFICATION.md](docs/VERIFICATION.md).

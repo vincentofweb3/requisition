@@ -27,6 +27,8 @@ The Studio deployment was created through the platform deployer. The deployer ha
 
 ## App and CLI checks
 
+- Public testnet preview: https://requisition-arc.vercel.app. A logged-out Playwright pass loaded Home, Desk, Proof, Docs, and mobile Home with no page or console errors on 2026-10-29. The Desk showed a fresh two-request bundle as READY. This is a testnet build; the mainnet build is redeployed after deployment.
+
 | Check | Result |
 | --- | --- |
 | App unit tests | 18 passed |
