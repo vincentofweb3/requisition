@@ -19,7 +19,9 @@ Built with **Arc Studio** on Arc Testnet. The mainnet deployment is a deliberate
 | Contract tests | `75 passed, 0 failed, 0 skipped` |
 | Public testnet preview | [requisition-arc.vercel.app](https://requisition-arc.vercel.app) |
 | Public app (mainnet) | Pending mainnet contract and redeploy |
-| Mainnet contract / tx | **Pending funding and explicit deployment approval** |
+| Mainnet contract | [`0xfc691d4b662cb459b86c353dda018a7a3b983631`](https://explorer.arc.io/address/0xfc691d4b662cb459b86c353dda018a7a3b983631) |
+| Mainnet deployment tx | [`0xa81d4f9a6dea9d3eee0b4a40295553baf95e696d377732c8f31275f4458945b7`](https://explorer.arc.io/tx/0xa81d4f9a6dea9d3eee0b4a40295553baf95e696d377732c8f31275f4458945b7) (block `28841314`, verified) |
+| Real mainnet batch | Pending buyer payment |
 
 The testnet deployment is supporting evidence only. A real mainnet contract and a real mainnet USDC transaction are required for submission. This README does not claim either yet. See [docs/VERIFICATION.md](docs/VERIFICATION.md).
 

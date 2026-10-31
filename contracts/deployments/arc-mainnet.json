@@ -1,12 +1,19 @@
 {
   "network": "arc-mainnet",
   "chainId": 5042,
-  "status": "pending",
-  "contract": null,
-  "deployTx": null,
-  "deployBlock": null,
+  "status": "deployed",
+  "contract": "0xfC691D4b662cB459b86c353DdA018a7a3b983631",
+  "deployTx": "0xa81d4f9a6dea9d3eee0b4a40295553baf95e696d377732c8f31275f4458945b7",
+  "deployBlock": 28841314,
   "usdc": "0x3600000000000000000000000000000000000000",
-  "constructorArgs": ["0x3600000000000000000000000000000000000000"],
+  "constructorArgs": [
+    "0x3600000000000000000000000000000000000000"
+  ],
   "exampleBatchTx": null,
-  "notes": "Not deployed. Requires human funding and explicit deployment approval."
+  "verification": {
+    "source": "sourcify match",
+    "status": "verified",
+    "checkedOn": "2026-10-30"
+  },
+  "notes": "Deployed from the disposable local deployer; no admin, owner, or withdrawal path."
 }

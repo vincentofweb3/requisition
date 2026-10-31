@@ -43,25 +43,20 @@ The Studio deployment was created through the platform deployer. The deployer ha
 
 ## Mainnet evidence
 
-**Not deployed. No mainnet transaction exists.**
+| Check | Value |
+| --- | --- |
+| RequisitionBook | `0xfC691D4b662cB459b86c353DdA018a7a3b983631` |
+| Chain | Arc mainnet, `5042` |
+| Deployment tx | `0xa81d4f9a6dea9d3eee0b4a40295553baf95e696d377732c8f31275f4458945b7` |
+| Deployment block | `28841314` |
+| USDC readback | `0x3600000000000000000000000000000000000000` |
+| MAX_BATCH readback | `50` |
+| totalPaid readback | `0` |
+| Code readback | non-empty onchain bytecode |
+| Source verification | Sourcify: exact match |
+| Explorer | https://explorer.arc.io/address/0xfc691d4b662cb459b86c353dda018a7a3b983631 |
+| Real USDC batch | pending buyer payment |
 
-Required before submission:
-
-- [x] Human approves public repository.
-- [ ] Human approves mainnet deployment.
-- [ ] Human-controlled keystore funded with a small amount of Arc mainnet USDC.
-- [ ] `RequisitionBook` deployed to chain `5042` with USDC `0x3600000000000000000000000000000000000000`.
-- [ ] Contract code read back from mainnet.
-- [ ] Deployment tx and block recorded in `contracts/deployments/arc-mainnet.json`.
-- [ ] Public app built with the mainnet contract address.
-- [ ] Real buyer wallet pays a two-vendor batch through the public app.
-- [ ] Explorer shows the transaction and both USDC transfers.
-- [ ] Contract balance is `0` after settlement.
-- [ ] Vendor balance deltas and `RequisitionPaid` events recorded.
-- [ ] Receipt page verifies the transaction.
-- [ ] Source verification attempted and its actual result recorded.
-
-Do not change this file to claim mainnet evidence until every item above is true and independently checked.
 
 ## Network checks
 

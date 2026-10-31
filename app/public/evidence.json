@@ -1,8 +1,8 @@
 {
-  "status": "pending",
+  "status": "deployed",
   "network": "arc-mainnet",
   "chainId": 5042,
-  "contract": null,
+  "contract": "0xfC691D4b662cB459b86c353DdA018a7a3b983631",
   "exampleTx": null,
   "studio": {
     "webUrl": "https://studio.arc.io/app/d3a230c9-d4b1-4c08-8cf4-6b018d2e83c0",
@@ -16,8 +16,8 @@
   },
   "batch": null,
   "verification": {
-    "codePresent": false,
-    "source": "unverified",
-    "notes": "Mainnet deployment and the real USDC batch are pending."
+    "codePresent": true,
+    "source": "Sourcify: exact match",
+    "notes": "Deployed and independently read back; the real USDC batch is pending."
   }
 }
