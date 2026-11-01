@@ -37,6 +37,7 @@ The Studio deployment was created through the platform deployer. The deployer ha
 | App ESLint | Passed |
 | Vite production build | Passed |
 | Mainnet app loaded logged out | Passed |
+| Browser smoke test | Home, Desk, Proof, Docs, and mobile Home loaded with no page or console errors |
 | Mainnet app payment through app UI | Passed; tx `0x82487b9daeb8d861363b4296da80623fbb5d30127572cef1d5b24d255d681494` |
 | Public proof page | Loaded logged out; complete batch evidence shown |
 | Public receipt verification | Both request receipts verified against the tx |
