@@ -38,6 +38,8 @@ The Studio deployment was created through the platform deployer. The deployer ha
 | Vite production build | Passed |
 | Mainnet app loaded logged out | Passed |
 | Mainnet app payment through app UI | Passed; tx `0x82487b9daeb8d861363b4296da80623fbb5d30127572cef1d5b24d255d681494` |
+| Public proof page | Loaded logged out; complete batch evidence shown |
+| Public receipt verification | Both request receipts verified against the tx |
 | CLI create/batch | Signed 1- and 2-request bundles |
 | CLI show/link | Parsed and encoded the bundles |
 | CLI verify against testnet RPC | Both request digests matched `hashRequisition` |

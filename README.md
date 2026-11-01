@@ -24,6 +24,8 @@ Built with **Arc Studio** on Arc Testnet. The mainnet deployment is a deliberate
 
 The testnet deployment is supporting evidence only. The public app is live on Arc mainnet and has executed a real USDC batch through the contract. The example app batch moved 0.01 USDC to two vendors in one atomic transaction; vendor balances changed by exactly 0.005 USDC each, the contract balance remained 0, and `totalPaid` is 0.03 USDC after an earlier 0.02 USDC CLI batch. The mainnet source is Sourcify-verified. See [docs/VERIFICATION.md](docs/VERIFICATION.md).
 
+Screenshots: [paid desk](public/screenshots/desk-paid.png), [completed proof](public/screenshots/proof-complete.png), [verified receipt](public/screenshots/receipt-verified.png).
+
 ## What it is
 
 Giving an agent a funded wallet creates a custody problem. Asking a human to copy an address from chat loses the request and the approval trail. Requisition is the approval layer between an agent deciding to buy something and money leaving a buyer's wallet:
