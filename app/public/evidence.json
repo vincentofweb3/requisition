@@ -1,9 +1,9 @@
 {
-  "status": "deployed",
+  "status": "complete",
   "network": "arc-mainnet",
   "chainId": 5042,
   "contract": "0xfC691D4b662cB459b86c353DdA018a7a3b983631",
-  "exampleTx": null,
+  "exampleTx": "0x82487b9daeb8d861363b4296da80623fbb5d30127572cef1d5b24d255d681494",
   "studio": {
     "webUrl": "https://studio.arc.io/app/d3a230c9-d4b1-4c08-8cf4-6b018d2e83c0",
     "previewUrl": "https://ir1cfm2pu2r187whim18o.preview.studio.arc.io",
@@ -12,12 +12,34 @@
     "deployBlock": 69402196,
     "chainId": 5042002,
     "tests": "75 passed, 0 failed, 0 skipped",
-    "notes": "Arc Testnet origin only. Mainnet deployment and the real USDC batch are pending."
+    "notes": "Arc Testnet origin only. Supporting evidence; not a mainnet deployment."
   },
-  "batch": null,
+  "batch": {
+    "requestCount": 2,
+    "totalAmount": "10000",
+    "vendors": [
+      {
+        "address": "0x8D04BE649cE1521e31aa93b1923E5ee35475021e",
+        "amount": "5000",
+        "balanceBefore": "10000",
+        "balanceAfter": "15000"
+      },
+      {
+        "address": "0x7aEDE5D09A4142BBCCE639D88614C237bf5436b5",
+        "amount": "5000",
+        "balanceBefore": "10000",
+        "balanceAfter": "15000"
+      }
+    ],
+    "contractBalanceAfter": "0",
+    "totalPaidAfter": "30000",
+    "events": [
+      "0x82487b9daeb8d861363b4296da80623fbb5d30127572cef1d5b24d255d681494"
+    ]
+  },
   "verification": {
     "codePresent": true,
     "source": "Sourcify: exact match",
-    "notes": "Deployed and independently read back; the real USDC batch is pending."
+    "notes": "Deployed, verified, and exercised with a real app-originated USDC batch."
   }
 }

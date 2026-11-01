@@ -17,13 +17,12 @@ Built with **Arc Studio** on Arc Testnet. The mainnet deployment is a deliberate
 | Testnet deployment tx | [`0xff9d5fce44fa0c1925c9282b7e909e2972f3e6ea74dc537181db7a31a1ba389f`](https://explorer.testnet.arc.io/tx/0xff9d5fce44fa0c1925c9282b7e909e2972f3e6ea74dc537181db7a31a1ba389f) |
 | Testnet block | `69402196` |
 | Contract tests | `75 passed, 0 failed, 0 skipped` |
-| Public testnet preview | [requisition-arc.vercel.app](https://requisition-arc.vercel.app) |
-| Public app (mainnet) | Pending mainnet contract and redeploy |
+| Public app (mainnet) | [requisition-arc.vercel.app](https://requisition-arc.vercel.app) |
 | Mainnet contract | [`0xfc691d4b662cb459b86c353dda018a7a3b983631`](https://explorer.arc.io/address/0xfc691d4b662cb459b86c353dda018a7a3b983631) |
 | Mainnet deployment tx | [`0xa81d4f9a6dea9d3eee0b4a40295553baf95e696d377732c8f31275f4458945b7`](https://explorer.arc.io/tx/0xa81d4f9a6dea9d3eee0b4a40295553baf95e696d377732c8f31275f4458945b7) (block `28841314`, verified) |
-| Real mainnet batch | Pending buyer payment |
+| Real mainnet batch (app) | [`0x82487b9daeb8d861363b4296da80623fbb5d30127572cef1d5b24d255d681494`](https://explorer.arc.io/tx/0x82487b9daeb8d861363b4296da80623fbb5d30127572cef1d5b24d255d681494) (block `29016246`, 0.01 USDC to 2 vendors) |
 
-The testnet deployment is supporting evidence only. A real mainnet contract and a real mainnet USDC transaction are required for submission. This README does not claim either yet. See [docs/VERIFICATION.md](docs/VERIFICATION.md).
+The testnet deployment is supporting evidence only. The public app is live on Arc mainnet and has executed a real USDC batch through the contract. The example app batch moved 0.01 USDC to two vendors in one atomic transaction; vendor balances changed by exactly 0.005 USDC each, the contract balance remained 0, and `totalPaid` is 0.03 USDC after an earlier 0.02 USDC CLI batch. The mainnet source is Sourcify-verified. See [docs/VERIFICATION.md](docs/VERIFICATION.md).
 
 ## What it is
 
@@ -144,7 +143,7 @@ App build: typecheck, ESLint, Vite production build passed
 CLI:       create, show, link, batch, and verify exercised against the Studio testnet contract
 ```
 
-The CLI verification matched the contract's `hashRequisition` output for both requests in a two-request testnet bundle. No testnet payment was made; the Proof page shows `0 USDC` paid.
+The CLI verification matched the contract's `hashRequisition` output for both requests in a two-request testnet bundle. No testnet payment was made. The mainnet app executed a real 0.01 USDC batch; the Proof page now reads `totalPaid = 0.03 USDC` after an earlier 0.02 USDC CLI batch.
 
 ## Deployment and verification
 
@@ -159,7 +158,7 @@ arc-forge create src/RequisitionBook.sol:RequisitionBook \
   --broadcast
 ```
 
-Arc Studio deploys testnet only. Sourcify lists Arc Mainnet as supported; verification has not yet been attempted for this new mainnet contract, so no verification claim is made. The app reads the contract address from `VITE_REQUISITION_BOOK`; the deployment transaction and example batch are configured separately. See [docs/VERIFICATION.md](docs/VERIFICATION.md) for the evidence checklist and current status.
+Arc Studio deploys testnet only. The mainnet contract is Sourcify-verified with an exact match, and the public app has executed a real batch through it. The app reads the contract address from `VITE_REQUISITION_BOOK`; the deployment transaction and example batch are configured separately. See [docs/VERIFICATION.md](docs/VERIFICATION.md) for the evidence checklist and current status.
 
 ## Security model
 
@@ -177,7 +176,7 @@ See [docs/SECURITY.md](docs/SECURITY.md) for the threat model and [docs/LIMITATI
 
 No escrow, dispute, refund, cancellation, delivery proof, fiat, cards, KYC, accounting, or payroll. The purpose text is offchain and visible to anyone with a bundle link; do not put secrets in it. Receipt verification needs a transaction hash supplied by the user. Public RPC availability and browser wallet behavior are external dependencies.
 
-Next: mainnet deployment, one real mainnet batch, public Vercel deployment, Sourcify source verification, and a 90-day roadmap toward approval policies, vendor directories, and accounting exports.
+Next: a 90-day roadmap toward approval policies, vendor directories, and accounting exports.
 
 ## License
 

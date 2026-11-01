@@ -9,11 +9,13 @@
   "constructorArgs": [
     "0x3600000000000000000000000000000000000000"
   ],
-  "exampleBatchTx": null,
+  "exampleBatchTx": "0x82487b9daeb8d861363b4296da80623fbb5d30127572cef1d5b24d255d681494",
+  "exampleBatchBlock": 29016246,
+  "exampleBatchSource": "public app",
   "verification": {
     "source": "sourcify match",
     "status": "verified",
     "checkedOn": "2026-10-30"
   },
-  "notes": "Deployed from the disposable local deployer; no admin, owner, or withdrawal path."
+  "notes": "Deployed from the disposable local deployer; no admin, owner, or withdrawal path. The example batch was submitted through the public mainnet app."
 }
