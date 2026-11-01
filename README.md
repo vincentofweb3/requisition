@@ -182,4 +182,4 @@ Next: a 90-day roadmap toward approval policies, vendor directories, and account
 
 ## License
 
-MIT. Copyright (c) 2026 unify.
+MIT. Copyright (c) 2026 vincentofweb3.
