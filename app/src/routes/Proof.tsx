@@ -89,9 +89,10 @@ export function Proof() {
         <span className="eyebrow">Live proof</span>
         <h1>Evidence, not assertions.</h1>
         <p>
-          The contract address, live total, and transaction links are public. The
-          mainnet batch evidence section stays explicitly pending until the real
-          USDC payment has happened.
+          The contract address, live total, and transaction links are public.{" "}
+          {evidenceStatus === "complete"
+            ? "The mainnet batch evidence section is populated from the real USDC payment."
+            : "The mainnet batch evidence section stays explicitly pending until the real USDC payment has happened."}
         </p>
       </div>
 
@@ -225,7 +226,7 @@ export function Proof() {
             <p>
               Studio produced the contract, tests, and app on Arc Testnet. That
               artifact is supporting evidence only; the required mainnet contract
-              and real USDC batch are separate and still pending.
+              and real USDC batch are separate from the Studio testnet artifact.
             </p>
           </div>
           <div className="card proof-card">
@@ -291,8 +292,8 @@ export function Proof() {
           <span className="eyebrow">Real batch evidence</span>
           <h2>Buyer to two vendors, one atomic transaction.</h2>
           <p>
-            This section is populated only after the real mainnet batch. Amounts
-            are recorded in 6-decimal USDC base units and displayed as USDC.
+            This section is populated from the real mainnet batch. Amounts are
+            recorded in 6-decimal USDC base units and displayed as USDC.
           </p>
         </div>
         {evidenceBatch ? (
